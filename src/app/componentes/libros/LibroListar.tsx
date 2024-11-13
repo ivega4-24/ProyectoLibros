@@ -1,4 +1,19 @@
+import { useState } from "react";
+import { Libro } from "../../modelos/Libro";
+import { ARREGLO_LIBROS } from "../../mocks/Libro-mocks";
+import { ARREGLO_LIBRO_GENEROS } from "../../utilidades/dominios/DomGenero";
+
 export const LibroListar = () => {
+const [arrLibros] = useState<Libro[]>(ARREGLO_LIBROS);
+
+const obtenerNombre = (valor: string)=>{
+  for(const objGen of ARREGLO_LIBRO_GENEROS)
+    if (objGen.codGenero == valor){
+      return objGen.nombreGenero;
+    }
+}
+
+
   return (
     <>
       <div className="pt-4 d-flex justify-content-center">
@@ -7,7 +22,7 @@ export const LibroListar = () => {
             <thead>
               <tr>
                 <th style={{ width: "5%" }} className="text-center">
-                  No.
+                  Código
                 </th>
                 <th style={{ width: "35%" }} className="text-center">
                   Título libro
@@ -16,41 +31,34 @@ export const LibroListar = () => {
                   Autor
                 </th>
                 <th style={{ width: "15%" }} className="text-center">
-                  ISBN
+                  Género
                 </th>
                 <th style={{ width: "15%" }} className="text-center">
-                  Editorial
+                  Imagen
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr>
+
+              {arrLibros.map((miLib: Libro)=>(
+                
+              <tr key={miLib.codLibro} className="align-middle">
+
                 <th scope="row" className="text-center">
-                  1
+                  {miLib.codLibro}
                 </th>
-                <td className="text-center">100 Años de soledad</td>
-                <td className="text-center">Gabriel Garcia Marquez</td>
-                <td className="text-center">5485483</td>
-                <td className="text-center">Sudamericana</td>
+                <td className="text-center">{miLib.tituloLibro}</td>
+                <td className="text-center">{miLib.autorLibro}</td>
+                <td className="text-center">{obtenerNombre(miLib.codGeneroLibro)}</td>
+                <td>
+                  <img src={miLib.imagenLibroBase64} alt="La imagen" className="imagenListado" />
+                  <br />
+                  {miLib.imagenLibro}
+                </td>
               </tr>
-              <tr>
-                <th scope="row" className="text-center">
-                  2
-                </th>
-                <td className="text-center">La casa de los espíritus</td>
-                <td className="text-center">Isabel Allende</td>
-                <td className="text-center">4138543</td>
-                <td className="text-center">Rama</td>
-              </tr>
-              <tr>
-                <th scope="row" className="text-center">
-                  3
-                </th>
-                <td className="text-center">LEl tunel</td>
-                <td className="text-center">Ernesto Sabato</td>
-                <td className="text-center">3438545</td>
-                <td className="text-center">Grupo planeta</td>
-              </tr>
+
+              ))}
+
             </tbody>
           </table>
         </div>

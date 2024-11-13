@@ -36,13 +36,13 @@ export const LibroAdmin = () => {
                 <td className="text-center">5485483</td>
                 <td className="text-center">Sudamericana</td>
                 <td className="text-center">
-                    <a href="/libact/3">
+                    <a href="/libact/1">
                 <i className="fa-solid fa-pen-to-square"
                 style={{color: "#ff3cde" }}
                 ></i>
                     </a>
                 &nbsp;
-                <i className="fa-solid fa-trash"></i>
+                <i className="fa-solid fa-trash" style={{ color: "#ff3cde"}}></i>
                 </td>
               </tr>
               <tr>
@@ -53,17 +53,33 @@ export const LibroAdmin = () => {
                 <td className="text-center">Isabel Allende</td>
                 <td className="text-center">4138543</td>
                 <td className="text-center">Rama</td>
-                <td className="text-center">Iconos</td>
+                <td className="text-center">
+                    <a href="/libact/2">
+                <i className="fa-solid fa-pen-to-square"
+                style={{color: "#ff3cde" }}
+                ></i>
+                    </a>
+                &nbsp;
+                <i className="fa-solid fa-trash" style={{ color: "#ff3cde"}}></i>
+                </td>
               </tr>
               <tr>
                 <th scope="row" className="text-center">
                   3
                 </th>
-                <td className="text-center">LEl tunel</td>
+                <td className="text-center">El tunel</td>
                 <td className="text-center">Ernesto Sabato</td>
                 <td className="text-center">3438545</td>
                 <td className="text-center">Grupo planeta</td>
-                <td className="text-center">Iconos</td>
+                <td className="text-center">
+                    <a href="/libact/3">
+                <i className="fa-solid fa-pen-to-square"
+                style={{color: "#ff3cde" }}
+                ></i>
+                    </a>
+                &nbsp;
+                <i className="fa-solid fa-trash" style={{ color: "#ff3cde"}}></i>
+                </td>
               </tr>
             </tbody>
           </table>

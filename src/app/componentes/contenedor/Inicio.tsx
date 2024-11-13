@@ -81,39 +81,72 @@ export const Inicio = () => {
               <span className="visually-hidden">Next</span>
             </button>
 
-        <h1 className="pt-4 d-flex justify-content-center">Best Sellers</h1>
+            <h1 className="pt-4 d-flex justify-content-center">Best Sellers</h1>
 
-
-        <div className="pt-4 d-flex justify-content-center">
-        <div className="col-md-8">
-            <div className="card-group">
-  <div className="card ">
-    <img src={cardUno} className="card-img-top" alt="Bestseller1" />
-    <div className="card-body">
-      <h5 className="card-title">Bestseller Uno</h5>
-      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div className="card">
-    <img src={cardDos} className="card-img-top" alt="Bestseller2" />
-    <div className="card-body">
-      <h5 className="card-title">Bestseller Dos</h5>
-      <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div className="card">
-    <img src={cardTres} className="card-img-top" alt="Bestseller3" />
-    <div className="card-body">
-      <h5 className="card-title">Bestseller Tres</h5>
-      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-      <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-</div>
-     </div>
-     </div>
+            <div className="pt-4 d-flex justify-content-center">
+              <div className="col-md-8">
+                <div className="card-group">
+                  <div className="card ">
+                    <img
+                      src={cardUno}
+                      className="card-img-top"
+                      alt="Bestseller1"
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">Bestseller Uno</h5>
+                      <p className="card-text">
+                        This is a wider card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                      <p className="card-text">
+                        <small className="text-body-secondary">
+                          Last updated 3 mins ago
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="card">
+                    <img
+                      src={cardDos}
+                      className="card-img-top"
+                      alt="Bestseller2"
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">Bestseller Dos</h5>
+                      <p className="card-text">
+                        This card has supporting text below as a natural lead-in
+                        to additional content.
+                      </p>
+                      <p className="card-text">
+                        <small className="text-body-secondary">
+                          Last updated 3 mins ago
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="card">
+                    <img
+                      src={cardTres}
+                      className="card-img-top"
+                      alt="Bestseller3"
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">Bestseller Tres</h5>
+                      <p className="card-text">
+                        This is a wider card with supporting text below as a
+                        natural lead-in to additional content.
+                      </p>
+                      <p className="card-text">
+                        <small className="text-body-secondary">
+                          Last updated 3 mins ago
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
